@@ -17,6 +17,8 @@ To install AutoInstalls_Revamped, simply clone the repository to your local mach
 
 ```
 git clone https://github.com/fukboi69420/AutoInstalls_Revamped.git
+cd AutoInstalls_Revamped
+ls -1
 ```
 
 Once you have cloned the repository, you can run the scripts in the `scripts` directory to install and configure the desired software packages.
