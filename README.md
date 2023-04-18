@@ -38,4 +38,4 @@ Contributions to AutoInstalls_Revamped are welcome and encouraged! If you have a
 
 ## License
 
-AutoInstalls_Revamped is released under the MIT License. See the LICENSE file for details.
+AutoInstalls_Revamped is released under the GNU PUBLIC License. See the LICENSE file for details.
