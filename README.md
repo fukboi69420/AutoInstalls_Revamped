@@ -10,6 +10,7 @@ AutoInstalls_Revamped is a collection of scripts and tools designed to automate 
 - Ability to install packages individually or as part of a bundled package.
 - Flexible configuration options to customize the installation and setup process.
 - Continuous development and improvements with regular updates.
+- Inclusion of Osint Tools and more packages defaulted from Kali-Linux
 
 ## Installation
 
