@@ -1,11 +1,5 @@
 Windows Registry Editor Version 5.00
 
-; MajorGeeks.Com
-
-; How To Take Full Ownership of Files & Folders
-
-; https://www.majorgeeks.com/content/page/take_full_ownership_of_files_folders.html
-
 [HKEY_CLASSES_ROOT'*'shell'runas]
 
 @="Take Ownership"
