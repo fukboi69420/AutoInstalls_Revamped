@@ -42,7 +42,7 @@ to udpate AutoInstalls to the newest version enter the following commands (from 
 cd AutoInstalls_Revamped
 mv update.sh /home/@usr
 ```
-and for future updates, you can just refer back to the update.sh file that should be located in your home.
+and for future updates, you can just refer back to the update.sh file that should be located in your home/usr/... .
 
 ## Contributing
 
