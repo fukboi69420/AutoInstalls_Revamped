@@ -1,39 +1,22 @@
-#!/bin/bash
+#!bin/bash
 
-#AutoInstalls update script
+#remove dir
+sudo rm -rf AutoInstalls
 
-#update repository
+#clone repository
+git clone https://github.com/fukboi69420/AutoInstalls_Revamped
 
-echo "Updating AutoInstalls_Revamped repository..."
-git pull
+#cd in AutoInstalls
+cd AutoInstalls_Revamped
 
-#update packages
+#cd in scripts
+cd scripts
 
-echo "Updating packages..."
+# enable osint_tools & pack to use sh
+chmod +x osint_tools.sh pack.sh
 
-#update apt packages
+# cd dir main
+cd ..
 
-sudo apt update -y
-sudo apt upgrade -y
-
-#update pip packages
-
-pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
-
-#update npm packages
-
-npm update -g
-
-echo "Cleaing up files..."
-
-for i in {1..50}
-do
-    echo -ne '/'
-    sleep 0.05
-done
-
-echo "][100%]"
-
-echo "AutoInstalls_Revamped is now up-to-date!"
-
-ls
+#list
+ls -1
