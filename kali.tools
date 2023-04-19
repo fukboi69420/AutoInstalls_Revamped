@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# This script installs Fluxion, John the Ripper, Lynis, Nikto, Nmap, and Skipfish
+
+# Install Fluxion
+echo "Installing Fluxion..."
+git clone https://github.com/FluxionNetwork/fluxion.git
+cd fluxion
+sudo ./fluxion.sh -i
+cd ..
+echo "Fluxion installation complete."
+
+# Install John the Ripper
+echo "Installing John the Ripper..."
+sudo apt-get install john -y
+echo "John the Ripper installation complete."
+
+# Install Lynis
+echo "Installing Lynis..."
+sudo apt-get install lynis -y
+echo "Lynis installation complete."
+
+# Install Nikto
+echo "Installing Nikto..."
+sudo apt-get install nikto -y
+echo "Nikto installation complete."
+
+# Install Nmap
+echo "Installing Nmap..."
+sudo apt-get install nmap -y
+echo "Nmap installation complete."
+
+# Install Skipfish
+echo "Installing Skipfish..."
+sudo apt-get install skipfish -y
+echo "Skipfish installation complete."
+
+echo "All installations complete."
