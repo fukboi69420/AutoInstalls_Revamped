@@ -35,6 +35,15 @@ sudo bash install_nginx.sh
 
 The script will prompt you for any necessary configuration options and install the software package.
 
+# Update
+to udpate AutoInstalls to the newest version enter the following commands (from @usr path), replace @usr with username
+(ex: kali => home/kali/...) 
+```
+cd AutoInstalls_Revamped
+mv update.sh /home/@usr
+```
+and for future updates, you can just refer back to the update.sh file that should be located in your home.
+
 ## Contributing
 
 Contributions to AutoInstalls_Revamped are welcome and encouraged! If you have an idea for a new feature or improvement, please submit a pull request with your changes.
