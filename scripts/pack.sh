@@ -13,9 +13,6 @@ function install_lamp_stack() {
 
     # Install other packages here
     # ...
-
-    # Print success message
-    echo "Packages installed successfully"
     
     # Install Apache
     sudo apt-get install apache2 -y
@@ -35,3 +32,7 @@ function install_lamp_stack() {
 
 # Call the function
 install_lamp_stack
+
+
+    # Print success message
+    echo "Packages installed successfully"
