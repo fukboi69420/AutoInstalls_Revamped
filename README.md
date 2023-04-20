@@ -20,6 +20,8 @@ To install AutoInstalls_Revamped, simply clone the repository to your local mach
 ```
 git clone https://github.com/fukboi69420/AutoInstalls_Revamped.git
 cd AutoInstalls_Revamped
+chmod +x update.sh
+chmod +x /scripts/osint_tools.sh
 ls -1
 ```
 
@@ -30,8 +32,8 @@ Once you have cloned the repository, you can run the scripts in the `scripts` di
 To use AutoInstalls_Revamped, navigate to the `scripts` directory and run the script for the software package you want to install. For example, to install NGINX, run the following command:
 
 ```
-cd scripts/nginx/
-sudo bash install_nginx.sh
+bash <program.sh> [OPTIONS]
+python3 <program.py>
 ```
 
 The script will prompt you for any necessary configuration options and install the software package.
