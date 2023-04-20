@@ -1,7 +1,42 @@
+#check if root
+if [ "$EUID" -ne 0 ];then
+    echo "Please run this script as root"
+    exit 1
+fi
+
 #!/bin/bash
 
 # This function installs multiple tools for OSINT investigations
 function install_osint_tools() {
+    # Install aircrack-ng
+sudo apt-get install aircrack-ng -y
+
+# Install nmap
+sudo apt-get install nmap -y
+
+# Install spiderfoot
+sudo apt-get install spiderfoot -y
+
+# Install phoneinfoga
+sudo git clone https://github.com/ExpertAnonymous/PhoneInfoga.git /opt/PhoneInfoga
+sudo pip3 install -r /opt/PhoneInfoga/requirements.txt
+
+# Install Go
+sudo apt-get install golang-go -y
+
+# Install Tool-X
+sudo git clone https://github.com/rajkumardusad/Tool-X.git /opt/Tool-X
+sudo chmod +x /opt/Tool-X/install.aex
+sudo /opt/Tool-X/install.aex
+
+# Install Osintgram
+sudo git clone https://github.com/Datalux/Osintgram.git /opt/Osintgram
+sudo pip3 install -r /opt/Osintgram/requirements.txt
+
+# Install socialpish
+sudo git clone https://github.com/xHak9x/socialpish.git /opt/socialpish
+sudo pip3 install -r /opt/socialpish/requirements.txt
+    
     # Install Sherlock
     git clone https://github.com/sherlock-project/sherlock.git
     cd sherlock
@@ -65,3 +100,6 @@ function install_osint_tools() {
 
 # Call the function to install the tools
 install_osint_tools
+
+
+echo "All tools have been installed successfully!"
