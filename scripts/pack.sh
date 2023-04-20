@@ -1,9 +1,21 @@
 #!/bin/bash
 
-# Function to install Apache, MySQL, PHP
+# Function to install Apache, MySQL, PHP, neofetch, tree, and similar other packages
 function install_lamp_stack() {
     # Update package list
     sudo apt-get update
+
+    # Install neofetch
+    sudo apt-get install neofetch -y
+
+    # Install tree
+    sudo apt-get install tree -y
+
+    # Install other packages here
+    # ...
+
+    # Print success message
+    echo "Packages installed successfully"
     
     # Install Apache
     sudo apt-get install apache2 -y
