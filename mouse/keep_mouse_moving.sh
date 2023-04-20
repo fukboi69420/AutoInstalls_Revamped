@@ -1,19 +1,24 @@
-#!/bin/bash
-
-# Function to install and update qBittorrent to the latest version
-function install_qbittorrent() {
-    # Add the qBittorrent stable PPA
-    sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
-    
-    # Update the package list
-    sudo apt-get update
-    
-    # Install qBittorrent
-    sudo apt-get install qbittorrent -y
-    
-    # Upgrade qBittorrent to the latest version
-    sudo apt-get upgrade qbittorrent -y
-}
-
-# Call the function to install and update qBittorrent
-install_qbittorrent
+#!bin/bash
+#
+# Script to keep mouse pointer moving so that, for example, Suspend to RAM timeout does not occur.
+#
+# The mouse pointer will move around its current position on the screen, i.e. around any position
+# on the screen where you place the pointer. However, if you prefer it to move arount the centre
+# of the screen then change mousemove_relative to mousemove in the xdotool command below.
+#
+# Set LENGTH to 0 if you do not want the mouse pointer to actually move.
+# Set LENGTH to 1 if you want the mouse pointer to actually move just a tiny fraction.
+# Set LENGTH to e.g. 100 if you want to see more easily the mouse pointer move.
+LENGTH=1
+#
+# Set DELAY to the desired number of seconds between each move of the mouse pointer.
+DELAY=5
+#
+while true
+do
+    for ANGLE in 0 90 180 270
+    do
+        xdotool mousemove_relative --polar $ANGLE $LENGTH
+	sleep $DELAY
+    done
+done
