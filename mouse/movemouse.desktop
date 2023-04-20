@@ -1,0 +1,19 @@
+[Desktop Entry]
+comment[en_GB]=Keep mouse moving automatically
+comment=Keep mouse moving automatically
+Exec=xterm -iconic -e "bash -c /AutoInstalls_Revamped/mouse/keep_mouse_moving.sh"
+GenericName[en_GB]=Keep mouse moving automatically
+GenericName=Keep mouse moving automatically
+Icon=input-mouse
+MimeType=
+Name[en_GN]=keep_mouse_moving
+name=keep mouse moving /AutoInstalls_Revamped/mouse
+path=/AutoInstalls_Revamped/mouse
+StartupNotify=true
+Terminal=false
+TerminalOptions=\s--noclose
+Type=Application
+X-BDUS-ServiceName=
+X-DBUS-StartupType=none
+X-LXDE-SubstituteUID=false
+X-LSDE-Username=fuckboi69420
