@@ -1,4 +1,5 @@
-# AutoInstalls_Revamped ![alt text] file:///C:/Users/zinal/Downloads/Github%20Icons/bash.png
+# AutoInstalls_Revamped 
+![alt text] file:///C:/Users/zinal/Downloads/Github%20Icons/bash.png
 
 AutoInstalls_Revamped is a collection of scripts and tools designed to automate the installation and configuration of various software packages on a Linux server. This repository is a fork of the original AutoInstalls project, with additional features and improvements.
 
