@@ -1,22 +1,18 @@
-import subprocess
+import tkinter as tk
 
-def run_nmap(ip_address):
+def create_ui():
     """
-    This function runs the nmap tool and returns the results.
-
-    Parameters:
-    ip_address (str): The IP address to scan
-
-    Returns:
-    str: The results of the nmap scan
+    This function creates a simple UI using the Tkinter framework.
     """
-    try:
-        # Run the nmap command and capture the output
-        output = subprocess.check_output(["nmap", "-sV", ip_address])
+    # Create a new window
+    window = tk.Tk()
 
-        # Decode the output from bytes to string and return it
-        return output.decode("utf-8")
-    except subprocess.CalledProcessError as e:
-        # Log the error
-        print(f"Error: {e}")
-        return ""
+    # Set the window title
+    window.title("My UI")
+
+    # Create a label
+    label = tk.Label(window, text="Hello, World!")
+    label.pack()
+
+    # Run the UI
+    window.mainloop()
