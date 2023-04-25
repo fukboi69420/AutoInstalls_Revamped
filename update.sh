@@ -1,7 +1,7 @@
 #!bin/bash
 
 #remove dir
-sudo rm -rf AutoInstalls
+sudo rm -rf AutoInstalls_Revamped
 
 #clone repository
 git clone https://github.com/fukboi69420/AutoInstalls_Revamped
@@ -19,4 +19,4 @@ chmod +x osint_tools.sh pack.sh
 cd ..
 
 #list
-ls -1
+tree
