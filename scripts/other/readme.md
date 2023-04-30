@@ -14,20 +14,20 @@ This repository contains miscellaneous scripts for AutoInstalls_Revamped, a tool
 
 To use these scripts, simply run your file(s) fo choice using the following command:
 
-python
 ```
 python3 script.py
 ```
-registry file
+python
 * * * * * * * * * * *
 ```
 regedit script.reg
 ```
-javascript
+registry file
 * * * * * * * * * * *
 ```
 node script.js
 ```
+javascript
 
 Follow the prompts to configure the software package.
 
