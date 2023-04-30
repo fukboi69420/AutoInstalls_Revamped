@@ -8,7 +8,7 @@ This repository contains miscellaneous scripts for AutoInstalls_Revamped, a tool
 - `osint_tools.py`: a script that installs and configures the specified packages from AutoInstalls_Revamped, This is just a python test version that may or may not work.
 - `takeownership.reg`: a script that gives the ability to take over ownership of files and directories without being denied, useful for files/dirs that are denied access even with Administrative Pass (windows 10).
 - `removeownership.reg`: a script that reverts the ability to take over ownership of files and directories without being denied, useful for files/dirs that are denied access even with Administrative Pass (windows 10).
-- `test.js`: a test script that Downloads a youtube video with a given url.
+- `yt_dload.js`: a test script that Downloads a youtube video with a given url.
 
 ## Usage
 
