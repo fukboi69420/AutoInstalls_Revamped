@@ -1,5 +1,3 @@
-Sure, here's an example Readme file that explains how the image assets are stored in the repository:
- 
 # AutoInstalls_Revamped Image Assets
  
 This repository contains image assets used in the AutoInstalls_Revamped project. The images are stored in the `images` directory.
