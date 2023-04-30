@@ -1,8 +1,8 @@
-# AutoInstalls_Revamped Image Assets
+#AutoInstalls_Revamped Image Assets
  
 This repository contains image assets used in the AutoInstalls_Revamped project. The images are stored in the `images` directory.
  
-## Directory Structure
+##Directory Structure
  
 ```
 images/
