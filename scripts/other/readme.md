@@ -17,11 +17,11 @@ To use these scripts, simply run your file(s) fo choice using the following comm
 ```
 python3 script.py
 ```
-*
+* * * * * * * * * * *
 ```
 regedit script.reg
 ```
-*
+* * * * * * * * * * *
 ```
 node script.js
 ```
