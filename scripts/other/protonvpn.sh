@@ -2,23 +2,22 @@
 
 # This function installs ProtonVPN on Ubuntu-based systems
 function install_protonvpn() {
-    # Install ProtonVpn DEB package
-    wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
+    # Install ProtonVpn Windows package
+    wget https://protonvpn.com/download-windows/
 
-    # Add ProtonVPN repository
-    sudo apt-get install /homne/kali/protonvpn-stable-release_1.0.3_all.deb
+    # check if wine is installed
+    if ! wine > /dev/null; then
+   echo -e "Command not found! Install? That's an error \c"
+   read
+   if "$REPLY" = "y"; then
+      sudo apt-get install wine
+   fi
+fi
 
-    # Update package list
-    sudo apt-get update
-
-    # Install ProtonVPN
-    sudo apt-get install protonvpn
-    # Install ProtonVPN CLI
-    sudo apt-get install protonvpn-cli
 
     # Log success message
     echo "ProtonVPN has been successfully installed!"
 }
 
 # Call the function to install ProtonVPN
-install_protonvpn
+sudo wine /scripts/other/ProtonVPN_win_v2.4.2
