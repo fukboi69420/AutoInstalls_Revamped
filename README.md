@@ -20,11 +20,12 @@ To install AutoInstalls_Revamped, simply clone the repository to your local mach
 
 ```
 sudo apt-get install -y tree
+sudo apt install -y zsh
 git clone https://github.com/fukboi69420/AutoInstalls_Revamped.git
 cd AutoInstalls_Revamped
 chmod +x update.sh
 chmod +x /scripts/osint_tools.sh
-tree
+tree -a
 ```
 
 Once you have cloned the repository, you can run the scripts in the `scripts` directory to install and configure the desired software packages.
