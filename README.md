@@ -1,8 +1,8 @@
-# AutoInstalls_Revamped 
+# AutoInstalls Revamped 
 ![bash logo](assets/logo.png)
 ![python logo](assets/screenshot1.png)
 
-AutoInstalls_Revamped is a collection of scripts and tools designed to automate the installation and configuration of various software packages on a Linux server. This repository is a fork of the original AutoInstalls project, with additional features and improvements.
+AutoInstalls Revamped is a collection of scripts and tools designed to automate the installation and configuration of various software packages on a Linux server. This repository is a fork of the original AutoInstalls project, with additional features and improvements.
 
 ## Features
 
