@@ -1,5 +1,5 @@
 
-# Online Python - IDE, Editor, Compiler, Interpreter
+# Python Sum
 
 def sum(a, b):
     return (a + b)
